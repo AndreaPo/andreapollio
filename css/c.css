@@ -107,6 +107,10 @@ a:hover{
   width: 100px;
   height: 100px;
 }
+#new-img-project{
+  width: 200px;
+  height: 200px;
+}
 #skills{
   
   transition: 1s linear;
@@ -220,6 +224,10 @@ pre::selection{
     width: 70px;
     height: 70px;
   }
+   #new-img-project{
+  width: 70px;
+  height: 70px;
+}
   .img-me-cartoon{
     width: 200px;
     height: 200px;
