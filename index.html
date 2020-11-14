@@ -5,106 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Andrea Pollio portfolio">
     <script src="https://kit.fontawesome.com/c61ec5bb1a.js" crossorigin="anonymous"></script>
-    <title>Andrea Pollio Portfolio</title>
-    <link rel="stylesheet" href="css/c.css">
+    <title>Andrea Pollio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#section5">contacts</a></li>
-            <li><a href="#section4">projects</a></li>
-            <li ><a href="#section3">skills</a></li>
-            <li><a href="#section2">about me</a></li>
-            <li><a href="#section1">home</a></li>
-        </ul>
-    </nav>
-
-    <div id="section1" >
-        <div id="box">
-            <div id="col"><img src="images/me.png" alt="me-avatar" class="img-me-cartoon"></div>
-            <div id="col">
-                <h1 id="h1-first">Hello to everybody!</h1><h1 id="h1-second">I'm Andrea!</h1>
-                <h1 id="h1-third">Your friendly Web Developer!</h1>
-            </div>
-       </div>
-    </div>
-
-    <div id="section2" >
-        <div id="row"><h1>about me</h1></div>
-        <div id="box-main">
-            
-            <div id="col">
-                <h1>What I love</h1>
-                <i class="fas fa-code fa-3x" id="skills"><h2>Programming</h2></i>
-                <i class="fas fa-dumbbell fa-3x"  id="skills"><h2>Do sports</h2></i>
-                <i class="fas fa-pizza-slice fa-3x"  id="skills"><h2>Cooking</h2></i>
-                <i class="fas fa-coffee fa-3x"  id="skills"><h2>Coffe</h2></i>
-            </div>
-            <div id="col">
-                <div id="row" ><h1 id="pre">bio</h1></div>
-<pre id="pre">
-I'm Andrea Pollio and I'm from Salerno, Italy.
-Few years ago I moved in Milan with my girlfriend
-since I decided it was time to move on and finish my
-university degree in Computer Sciences while I was 
-working to pay my studies.
-Plenty of my hobbies revolve around the IT world,
-Web programming and coding, with the latter very
-interesting field and base of my studies.
-Last but not least  my hobbies are not  only 
-computer-centered, I took a cooker degree in 
-these years, I regularly go to the gym and read books.
-Ps.I'm a coffee addicted.    
-</pre>
-                            </div>
-            
-    </div>
-    </div>
-    <div id="section3" >
-        <div id="row" ><h1>skills</h1></div>
-        <div id="box-main">
-            
-                
-                <div id="col">
-                <i class="fab fa-php fa-5x" id="skills"><h2>PHP</h2></i>
-                <i class="fab fa-java fa-5x" id="skills"><h2>JAVA</h2></i>
-                <i class="fab fa-html5 fa-5x" id="skills"><h2>HTML</h2></i>
-                <i class="fas fa-mobile-alt fa-5x" id="skills"><h2>RESPONSIVE<br>LAYOUT</h2></i>
-                </div>
-                <div id="col" >
-                <i class="fab fa-js fa-5x" id="skills"><h2>JAVASCRIPT</h2></i>
-                <i class="fab fa-bootstrap fa-5x" id="skills"><h2>BOOTSTRAP</h2></i>
-                <i class="fas fa-database fa-5x" id="skills"><h2>MYSQL</h2></i>
-                <i class="fab fa-css3-alt fa-5x" id="skills"><h2>CSS</h2></i>
-                
-                </div>
+<div id="start"></div>
+    <nav id="navbar">
+        <button id="navbar-btn" onclick="showNav()"><i class="fas fa-bars fa-3x"></i></button>
         
-       </div>
-    </div>
-    <div id="section4" >
-        <div id="row" ><h1>Here some projects made by me!</h1></div>
-        <div id="box-main">
+        <a href="#h1-home" class="navbar-links">HOME</a>
+        <a href="#section-bio" class="navbar-links">BIO</a>
+        <a href="#section-skills" class="navbar-links">SKILLS</a>
+        <a href="#section-works" class="navbar-links">WORKS</a>
+        <a href="#section-contacts" class="navbar-links">CONTACTS</a>
+    
+    </nav>
+    <script src="js/showNavbar.js"></script>
+    <section id="section-home">
 
-            <div id="col">
-                <a href="https://github.com/AndreaPo/andreapollio.github.io"><h2>Andrea Pollio Portfolio</h2><img src="images/portfolio.png" alt="immagine portfolio progetto" id="new-img-project"></a>
-                <a href="https://github.com/AndreaPo/weather-"><h2>Weather app</h2><img src="images/weather.png" alt="immagine weather progetto" id="new-img-project"></a>
+        <div id="container">
+        <h1 id="h1-home">Hello to Everyone! I'm Andrea your friendly Web Developer!</h1>      
+        </div>
+        <div id="container">
+            <img src="images/me.png" alt="me" id="img-home">
+        </div>
+
+    </section>
+
+    <section id="section-bio">
+        <div id="container">
+            <h2>What I love</h2>
+        </div>
+        <div id="responsive-row">
+            <div id="container-bio">
+                <div><h2>Dev</h2><i class="fas fa-code fa-3x" id="icon-skills"></i></div>
+                <div><h2>Gym</h2><i class="fas fa-dumbbell fa-3x"  id="icon-skills"></i></div>
+                <div><h2>Pizza</h2><i class="fas fa-pizza-slice fa-3x"  id="icon-skills"></i></div>
+                <div><h2>Coffe</h2><i class="fas fa-coffee fa-3x"  id="icon-skills"></i></div>
             </div>
-                <div id="col">
-                <a href="#"><h2>progetto3</h2><img src="images/work-in-progress.png" alt="immagine progetto" id="img-project"></a>
-                <a href="#"><h2>progetto4</h2><img src="images/work-in-progress.png" alt="immagine progetto" id="img-project"></a>
-            </div>        
-       </div>
-    </div>
-    <div id="section5">
-        <div id="row" ><h1 id="h1-wastetime">Don't waste time!</h1></div>
-        <div id="row" ><h1>Contact me and find out the best solution for you!</h1></div>
-        <div id="box-main">
-            <div id="col">
-                <i class="far fa-envelope fa-5x"  id="contact"><h2>and_po@hotmail.it</h2></i>
-                <i class="fab fa-linkedin fa-5x" id="contact"><h2>LINKEDIN</h2></i>
-                <i class="fas fa-phone fa-5x" id="contact"><h2>number</h2></i>
+        </div>
+
+        
+            <div id="container">
+                <h2>My Backgroud</h2>
             </div>
-       </div>
+            <div id="container">
+            <div id="text-container">
+                <p id="pre-bio">I'm Andrea Pollio and I'm from Salerno, Italy.
+                                Few years ago I moved in Milan with my girlfriend
+                                since I decided it was time to move on and finish my
+                                university degree in Computer Sciences while I was 
+                                working to pay my studies.
+
+                                Plenty of my hobbies revolve around the IT world,
+                                Web programming and coding, with the latter very
+                                interesting field and base of my studies.
+                              
+                                Last but not least  my hobbies are not  only 
+                                computer-centered, I took a cooker degree in 
+                                these years, I regularly go to the gym and read books.<br><br>
+                                Ps.I'm a coffee addicted.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-skills">
+        <div id="container">
+            <h2>I' m working on improving these SKILLS</h2>
+        </div>
+        <div id="responsive-row">
+        <div id="container-skills">
+                <div id="skills"><h3>PHP</h3><i class="fab fa-php fa-3x"></i></div>
+                <div id="skills"><h3>JAVA</h3><i class="fab fa-java fa-3x" ></i></div>
+                <div id="skills"><h3>HTML</h3><i class="fab fa-html5 fa-3x"></i></div>
+                <div  id="skills"><h3>CSS</h3><i class="fab fa-css3-alt fa-3x"></i></div>
+        </div>
+        <div id="container-skills">        
+                <div  id="skills"><h3>JS</h3><i class="fab fa-js fa-3x" ></i></div>
+                <div  id="skills"><h3>BOOTSTRAP</h3><i class="fab fa-bootstrap fa-3x" ></i></div>
+                <div  id="skills"><h3>SQL</h3><i class="fas fa-database fa-3x"></i></div>
+                <div id="skills"><h3>NODE</h3><i class="fab fa-node fa-3x"></i></div>
+        </div>
     </div>
+    </section>
+
+    <section id="section-works">
+        <div id="container">
+            <h1>Works</h1>
+        </div>
+        <div id="works-row">
+        <div id="container-works">
+            <div id="work"><a href="https://github.com/AndreaPo/andreapollio"><img src="images/portfolio.png" alt="Portfolio-Work-Image" id="work-images"></a></div>
+            <div id="work"><a href="https://github.com/AndreaPo/weather-"><img src="images/weather.png" alt="Weather-Work-image" id="work-images"></a></div>
+             <div id="work"><a href="https://github.com/AndreaPo/chat"><img src="images/chat.png" alt="Chat-Work-image" id="work-images"></a></div>
+        </div>
+        <div id="container-works">
+            <div id="work"><a href="https://github.com/AndreaPo/My-Cine"><img src="images/my-cine.png" alt="My-Cine-Work-image" id="work-images"></a></div>
+            <div id="work"><a href="https://github.com/AndreaPo/corona-travel"><img src="images/corona-travel.png" alt="Corona-Travel-Work-image" id="work-images"></a></div>
+            <div id="work"><a href="https://github.com/AndreaPo/Organize-Me-"><img src="images/organize-me.png" alt="Organize-Me-Work-image" id="work-images"></a></div>
+        </div>
+        </div>
+    </section>
+
+    <section id="section-contacts">
+        <div id="container"><h1>Contacts</h1></div>
+        <div id="container-works">
+            <a href="andrea.pollio@outlook.com"  class="contacts-links"><i id="ico" class="fas fa-envelope fa-3x"></i></a>
+            <a href="+393491680520"  class="contacts-links"><i id="ico" class="fas fa-phone fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/andrea-pollio/"  class="contacts-links"><i id="ico" class="fab fa-linkedin-in fa-3x"></i></a>
+            <a href="https://github.com/AndreaPo"  class="contacts-links"><i id="ico" class="fab fa-github fa-3x"></i></a>
+        </div>
+        <div id="container"><p class="copy">Copyrights by Andrea Pollio</p></div>
+    </section>
+
+    
 </body>
 </html>
