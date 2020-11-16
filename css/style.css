@@ -2,13 +2,15 @@
 html, body{
     scroll-behavior: smooth;
     padding: 0px;
-    margin: 0px;
+    margin: auto 0px;
     background-color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 ::selection {
     background:white;
   }
+/*Navbar*/  
 #navbar{
     display: flex;
     flex-direction: row;
@@ -23,6 +25,7 @@ html, body{
 #navbar-btn{
     background-color:rgb(88, 20, 225);
     border: none;
+    padding: 10px;
 }
 #navbar-btn:hover{
     background-color:rgb(98, 21, 252);
@@ -38,11 +41,12 @@ html, body{
     background-color: white;
     color: black;
 }
+/*section home*/  
 #section-home{
     background-color: whitesmoke;
     margin-top: 50px;
     width: 100%;
-    height: 100vh;
+    height: auto;
     box-shadow: 0px 3px 10px rgb(88, 20, 225);
     
 }
@@ -58,7 +62,10 @@ html, body{
 #img-home{
     width: 30%;
     height: 30%;
+    padding: 0px;
+    margin: 0px;
 }
+/*section bio*/  
 #section-bio{
     background-color: rgba(88, 20, 225, 0.439);
     padding: 0px;
@@ -78,11 +85,12 @@ html, body{
 #text-container{
     width: 50%;
 }
-
+/*section skills*/  
 #section-skills{
     background-color: rgba(88, 20, 225, 0.7);
     padding: 0px;
     box-shadow: 0px 3px 10px rgb(88, 20, 225);
+    width: 100%;
 }
 
 #container-skills{
@@ -90,18 +98,20 @@ html, body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 #skills{
     width:200px;
-    height: 200px;
+    height: auto;
     padding: 50px;
 }
+/*section works*/  
 #section-works{
     background-color: rgba(88, 20, 225, 0.864);
-    height: 100vh;
+    height: auto;
 }
 #container-works{
-    margin-top: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -110,13 +120,15 @@ html, body{
 #work-images{
     width: 200px;
     height: 200px;
-    
+    padding: 0px;
+    border: 2px solid black;
+    box-shadow: 0px 3px 5px black;
 }
-#work{
-    height: auto;
-    border: 3px solid black;
-    box-shadow: 0px 3px 10px black;
+.link-work{
+    width: 0px;
+    height: 0px;
 }
+/*section contacts*/  
 #section-contacts{
     background-color: rgb(88, 20, 225);
     height: auto;
@@ -127,7 +139,7 @@ html, body{
 }
 i:hover{
     color: whitesmoke;
-    animation-name: example;
+    animation-name: moveup;
   animation-duration: 2s;
 }
 #ico{
@@ -147,6 +159,8 @@ i:hover{
         justify-content: space-around;
     }
     #skills{
+        width: 100px;
+        height: auto;
         padding: 20px;
     }
     #container-works{
@@ -164,26 +178,37 @@ i:hover{
   }
 
 @media (max-width: 535px) {
+    #section-bio, #container-works{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
     .navbar-links{
         display: none;
     }
+    .navbar-btn, i, .fas{
+        padding: 0px;
+        margin: 0px;
+    }
     #navbar{
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 0px;
     }
     #img-home{
         height: 250px;
         width: 250px;
     }
     #skills{
-        padding: 5px;
+        padding: 10px;
     }
     #text-container{
         display: none;
     }
-    #responsive-row{
+   #responsive-row{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -196,7 +221,10 @@ i:hover{
         width: 100px;
         height: 100px;
     }
+    #container-works{
+        padding: 0px;
+    }
   }
-  @keyframes example {
+  @keyframes moveup {
   50%{ transform: translateY(-50%);}
   }
